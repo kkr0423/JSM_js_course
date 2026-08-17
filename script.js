@@ -1,5 +1,10 @@
-const age = 20;
+let number = 5;
 
-const ageIsGreaterThan18 = age >= 18;
+number += 5;
+number -= 5;
+number *= 5;
+number /= 5;
 
-console.log(ageIsGreaterThan18);    
+let strirng = "Hello";
+string += ", I am Kakeru.";
+console.log(`${string} I live in Tokyo.`);
