@@ -1,10 +1,9 @@
-let number = 5;
+const age = 18;
 
-number += 5;
-number -= 5;
-number *= 5;
-number /= 5;
-
-let strirng = "Hello";
-string += ", I am Kakeru.";
-console.log(`${string} I live in Tokyo.`);
+if(age > 18) {
+ console.log("You may enter");
+} else if (age === 18) {
+ console.log("You are lucky. You just turned 18!");
+} else {
+ console.log("Go away")
+};
