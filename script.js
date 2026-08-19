@@ -1,9 +1,19 @@
-const age = 18;
+// Falsy Values
+/**
+ * false
+ * 0
+ * null
+ * undefined
+ * NaN
+ * "", ''
+ */
 
-if(age > 18) {
- console.log("You may enter");
-} else if (age === 18) {
- console.log("You are lucky. You just turned 18!");
+//Truthy Values
+// All values that are not falsy.
+const value = "";
+
+if(true) {
+    console.log(`${value} is TRUTHY`);
 } else {
- console.log("Go away")
-};
+    console.log(`${value} is FALSY`);
+}
