@@ -1,16 +1,3 @@
-const superHero = "Captain America";
+const age = 25;
 
-switch(superHero) {
-    case 'Iron Man':
-    console.log('I am Iron Man...');
-    break;
-    case 'Thor':
-    console.log('That is my hammer');
-    break;
-    case 'Captain America':
-    console.log('Never give up.');
-    break;
-    default:
-    console.log('Enter a valid superhero');
-    break;
-}
+age > 18 ? console.log('You can drive') : console.log('You may not drive yet');
