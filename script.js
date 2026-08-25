@@ -1,3 +1,11 @@
-const age = 25;
+//For loops
+for(let i = 0; i < 10; i++) {
+   console.log(i)
+};
 
-age > 18 ? console.log('You can drive') : console.log('You may not drive yet');
+//While loops
+let i = 0;
+while(i < 10) {
+    console.log(i);
+    i++;
+};
