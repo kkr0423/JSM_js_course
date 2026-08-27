@@ -1,11 +1,8 @@
-//For loops
-for(let i = 0; i < 10; i++) {
-   console.log(i)
+//function declaration
+function square(number) {
+    return number * number;
 };
 
-//While loops
-let i = 0;
-while(i < 10) {
-    console.log(i);
-    i++;
-};
+//function call
+const result = square(5);
+console.log(result);
