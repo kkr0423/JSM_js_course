@@ -1,11 +1,5 @@
-function name(params) {};
+const square = (number) => number * number;
 
-let name = function(params) {};
+const result = square(5);
 
-const sayHi = (name) => {
-   return`Hi, ${name}`;
-};
-
-const greating = sayHi('Johm');
-
-console.log(greating);
+console.log(result);
