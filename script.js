@@ -1,5 +1,5 @@
-const square = (number) => number * number;
+const sayHi = (name, age) => {
+console.log(`Hi, ${name}, You are ${age} yars old.`)
+};
 
-const result = square(5);
-
-console.log(result);
+sayHi("Kakeru", 39);
