@@ -1,5 +1,12 @@
-const sayHi = (name, age) => {
-console.log(`Hi, ${name}, You are ${age} yars old.`)
-};
+const exampleString = 'test';
 
-sayHi("Kakeru", 39);
+const reversedString = exampleString.split('').reverse().join('');
+console.log(reversedString); // "tset"
+
+const dogSays = 'woof';
+
+console.log(dogSays.repeat(5)); // "woofwoofwoofwoofwoof"
+
+const str = '       Hello World!        ';
+
+console.log(str.trim()); // "Hello World!"
