@@ -1,12 +1,20 @@
-const exampleString = 'test';
+const months = ['January', 'February', 'March', 'April'];
 
-const reversedString = exampleString.split('').reverse().join('');
-console.log(reversedString); // "tset"
+console.log(months[0]); // 'January'
 
-const dogSays = 'woof';
+months[2] = 'Not March'; // [ 'January', 'February', 'Not March', 'April' ]
 
-console.log(dogSays.repeat(5)); // "woofwoofwoofwoofwoof"
+console.log(months.length); // 5
 
-const str = '       Hello World!        ';
+const arr = [
+    'Apple',
+    { name: 'John' },
+    true,
+    function() {
+        console.log('hello');
+    }
+];
 
-console.log(str.trim()); // "Hello World!"
+for (let i = 0; i < months.length; i++) {
+    console.log(months[i]);
+}
