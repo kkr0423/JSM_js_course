@@ -1,20 +1,18 @@
 const months = ['January', 'February', 'March', 'April'];
 
-console.log(months[0]); // 'January'
+console.log(months[0]);//January
 
-months[2] = 'Not March'; // [ 'January', 'February', 'Not March', 'April' ]
+months[2] = 'Not March';//['January', 'February', 'Not March', 'April'];
 
-console.log(months.length); // 5
+months[4] = 'May';//['January', 'February', 'Not March', 'April', 'May'];
 
-const arr = [
-    'Apple',
-    { name: 'John' },
-    true,
-    function() {
-        console.log('hello');
-    }
-];
+console.log(months.length);//5
 
-for (let i = 0; i < months.length; i++) {
-    console.log(months[i]);
+const arr = ['Apple', { name: 'John' }, true, function() {
+    console.log('hello');
+}];
+
+for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
 }
+
