@@ -1,18 +1,15 @@
-const months = ['January', 'February', 'March', 'April'];
+const names = ['John', 'Jane', 'Jim', 'Jill'];
+names.push('Jack');//['John', 'Jane', 'Jim', 'Jill', 'Jack'];
+console.log(names);//['John', 'Jane', 'Jim', 'Jill', 'Jack'];
 
-console.log(months[0]);//January
+const lastName = names.pop();//['John', 'Jane', 'Jim', 'Jill'];
+console.log(lastName);//'Jack';
 
-months[2] = 'Not March';//['January', 'February', 'Not March', 'April'];
+const firstName = names.shift();//['Jane', 'Jim', 'Jill'];
+console.log(firstName);//'John';
 
-months[4] = 'May';//['January', 'February', 'Not March', 'April', 'May'];
+names.unshift('John');//['John', 'Jane', 'Jim', 'Jill'];
+console.log(names);//['John', 'Jane', 'Jim', 'Jill'];
 
-console.log(months.length);//5
-
-const arr = ['Apple', { name: 'John' }, true, function() {
-    console.log('hello');
-}];
-
-for (let i = 0; i < arr.length; i++) {
-    console.log(arr[i]);
-}
-
+names.splice(1, 0, "Jenny");
+console.log(names);//['John', 'Jenny', 'Jane', 'Jim', 'Jill'];
