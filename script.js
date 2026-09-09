@@ -1,32 +1,29 @@
-const names = ['John', 'Jane', 'Jim', 'Jill'];
-names.push('Jack');//['John', 'Jane', 'Jim', 'Jill', 'Jack'];
-console.log(names);//['John', 'Jane', 'Jim', 'Jill', 'Jack'];
+const names =["John", "Jenny", "Johnny"];
 
-const lastName = names.pop();//['John', 'Jane', 'Jim', 'Jill'];
-console.log(lastName);//'Jack';
+for (let i = 0; i < names.length; i++) {
+    console.log(i, names[i]);
+}
 
-const firstName = names.shift();//['Jane', 'Jim', 'Jill'];
-console.log(firstName);//'John';
+// Output:
+// 0 'Jon'
+// 1 'Jenny'
+// 2 'Johnny'
 
-names.unshift('John');//['John', 'Jane', 'Jim', 'Jill'];
-console.log(names);//['John', 'Jane', 'Jim', 'Jill'];
+names.forEach((value, index) => {
+    console.log(index, value);
+});
 
-names.splice(1, 0, "Jenny");
-console.log(names);//['John', 'Jenny', 'Jane', 'Jim', 'Jill'];
+function logArrayElement(element, index) {
+    console.log(index, element);
+};
 
-const moreNames = ['Mary', 'Mark', 'Matt'];
-const allNames = names.concat(moreNames);
-console.log(allNames);//['John', 'Jenny', 'Jane', 'Jim', 'Jill', 'Mary', 'Mark', 'Matt'];
+names.forEach(logArrayElement);
 
-console.log(names.indexOf('Jane'));//1
+let sum = 0;
+const numbres = [65, 44, 12, 4];
 
-console.log(names.lastIndexOf('Jane'));//1
+numbres.forEach(number => {
+    sum += number;
+});
 
-console.log(names.includes('Jane'));//true
-
-const foundName = names.find(name => name.length > 4);
-console.log(foundName);//'Jenny'
-
-const filteredNames = names.filter(name => name.length > 4);
-console.log(filteredNames);//['Jenny', 'Jane', 'Jim', 'Jill'];
-
+console.log(sum);
