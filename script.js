@@ -1,29 +1,12 @@
-const names =["John", "Jenny", "Johnny"];
+// A local shop's inventory
+const inventory = [
+    { price: 5, name: 'eggs' },
+    { price: 5, name: 'ham' },
+    { price: 5, name: 'mayo' },
+    { price: 5, name: 'bread' },
+];
 
-for (let i = 0; i < names.length; i++) {
-    console.log(i, names[i]);
-}
+// A customer asks for a list of all the inventory they have
+const requestFullInventory = inventory.map(item => item);
 
-// Output:
-// 0 'Jon'
-// 1 'Jenny'
-// 2 'Johnny'
-
-names.forEach((value, index) => {
-    console.log(index, value);
-});
-
-function logArrayElement(element, index) {
-    console.log(index, element);
-};
-
-names.forEach(logArrayElement);
-
-let sum = 0;
-const numbres = [65, 44, 12, 4];
-
-numbres.forEach(number => {
-    sum += number;
-});
-
-console.log(sum);
+console.log(requestFullInventory); // requestFullInventory is filled with the inventory that we have
