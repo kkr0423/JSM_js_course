@@ -1,12 +1,13 @@
-// A local shop's inventory
-const inventory = [
-    { price: 5, name: 'eggs' },
-    { price: 5, name: 'ham' },
-    { price: 5, name: 'mayo' },
-    { price: 5, name: 'bread' },
+const numbers = [-10, 0, -2, 15, -36, 25];
+
+const positiveNumbers = numbers.filter(number => number > 0);
+
+const employeesData = [
+    { name: "Sebastian Zuñiga", overtime: 5 },
+    { name: "Cardi Vee", overtime: 10 },
+    { name: "George Lopez", overtime: 12 }
 ];
 
-// A customer asks for a list of all the inventory they have
-const requestFullInventory = inventory.map(item => item);
+const selectedEmployees = employeesData.filter(employee => employee.overtime > 7);
 
-console.log(requestFullInventory); // requestFullInventory is filled with the inventory that we have
+
