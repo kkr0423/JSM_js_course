@@ -1,13 +1,5 @@
-const numbers = [-10, 0, -2, 15, -36, 25];
+const states = ["tx", "ca", "nm"];
 
-const positiveNumbers = numbers.filter(number => number > 0);
+const stateFoundUsingFind = states.find(state => state === "tx");
 
-const employeesData = [
-    { name: "Sebastian Zuñiga", overtime: 5 },
-    { name: "Cardi Vee", overtime: 10 },
-    { name: "George Lopez", overtime: 12 }
-];
-
-const selectedEmployees = employeesData.filter(employee => employee.overtime > 7);
-
-
+console.log(stateFoundUsingFind);
