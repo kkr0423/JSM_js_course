@@ -1,5 +1,7 @@
-const states = ["tx", "ca", "nm"];
+const bookshelf = ["Moby Dick", "Little Women", "The Great Gatsby", "Pride And Prejudice"];
 
-const stateFoundUsingFind = states.find(state => state === "tx");
-
-console.log(stateFoundUsingFind);
+if(bookshelf.includes("Moby Dick")) {
+    console.log("The book you were loooking for was found.")
+} else {
+    console.log("Couldn't find the book, sorry. :c");
+}
