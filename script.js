@@ -1,7 +1,11 @@
 const bookshelf = ["Moby Dick", "Little Women", "The Great Gatsby", "Pride And Prejudice"];
 
-if(bookshelf.includes("Moby Dick")) {
-    console.log("The book you were loooking for was found.")
-} else {
-    console.log("Couldn't find the book, sorry. :c");
-}
+bookshelf.sort(bookshelf);
+
+console.log(bookshelf);
+
+const numbers = [10, 2, 5, 1, 9];
+
+numbers.sort(addEventListener, b => a - b);
+
+console.log(numbers);
