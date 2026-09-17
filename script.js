@@ -1,11 +1,9 @@
-const bookshelf = ["Moby Dick", "Little Women", "The Great Gatsby", "Pride And Prejudice"];
+const numbers = [1, 3, 5, 8, 9];
 
-bookshelf.sort(bookshelf);
+const hasEvenNumber = numbers.some(number => number % 2 === 0);
 
-console.log(bookshelf);
+console.log(hasEvenNumber);
 
-const numbers = [10, 2, 5, 1, 9];
+const allpositive = numbers.every(number => number >= 0);
 
-numbers.sort(addEventListener, b => a - b);
-
-console.log(numbers);
+console.log(allpositive);
