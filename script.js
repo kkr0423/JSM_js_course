@@ -1,7 +1,12 @@
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const firstName = 'Jonny'
 
-const sum = numbers.reduce((accumulatedVal, currentVal) => {
-    return accumulatedVal + currentVal;
-}, 0);
+const person = {
+    firstName,
+    lastName: 'Doe',
+    age: 25,
+    car: {
+        year: 20215,
+        color: 'Red',
+    }
+};
 
-console.log(sum);
