@@ -1,20 +1,14 @@
-const person = {
-  firstName: "John",
-  lastName: "Doe",
-  age: 25,
+const myObj = {
+  myMethod: function (params) {
+    // ...do something
+    return params;
+  },
+
+  // OR using shorthand syntax
+  myOthermethod(params) {
+    // ...do something else
+  },
 };
 
-console.log(person.firstName); // "John"
-
-// Adding a new property
-person.dog = { name: "Mike", age: 3 };
-
-// Updating an existing property
-person.age = 25;
-
-console.log(person);
-
-console.log(person["firstName"]); // "John"
-
-const property = "age";
-console.log(person[property]);
+const params = "Hi";
+myObj.myMethod(params);
