@@ -1,11 +1,9 @@
-let firstName = "Kakeru";
-console.log(firstName);
-
-const logName = () => {
+const someFunction = () => {
+  const firstName = "Kakeru";
   console.log(firstName);
-  firstName = "John";
 };
 
-const logFirstName = () => {
+const someFunction2 = () => {
+  const firstName = "Kakeru";
   console.log(firstName);
 };
