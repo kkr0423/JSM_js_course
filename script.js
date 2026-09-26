@@ -1,9 +1,7 @@
-const someFunction = () => {
-  const firstName = "Kakeru";
-  console.log(firstName);
-};
+const isThisABlickOfCpde = true;
 
-const someFunction2 = () => {
-  const firstName = "Kakeru";
-  console.log(firstName);
-};
+if (isThisABlickOfCpde) {
+  var firstName = "Kakeru";
+}
+
+console.log(firstName);
