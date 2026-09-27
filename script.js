@@ -1,7 +1,20 @@
-const isThisABlickOfCpde = true;
+//Global Scope
+const globalVar = "I am global!";
 
-if (isThisABlickOfCpde) {
-  var firstName = "Kakeru";
+function showGlobal() {
+  console.log(globalVar);
 }
 
-console.log(firstName);
+showGlobal();
+
+console.log(globalVar);
+
+//Function Scope
+function myFunction() {
+  const functionScopedVar = "I am inside the function!";
+
+  console.log(functionScopedVar);
+}
+
+myFunction();
+console.log(functionScopedVar); //Syntax Error
