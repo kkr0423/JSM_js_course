@@ -1,20 +1,14 @@
-//Global Scope
-const globalVar = "I am global!";
+const outer = () => {
+  const outerVar = "Hello";
 
-function showGlobal() {
-  console.log(globalVar);
-}
+  const inner = () => {
+    const innerVar = "Hi";
 
-showGlobal();
+    console.log(innerVar, outerVar);
+  };
 
-console.log(globalVar);
+  return inner;
+};
 
-//Function Scope
-function myFunction() {
-  const functionScopedVar = "I am inside the function!";
-
-  console.log(functionScopedVar);
-}
-
-myFunction();
-console.log(functionScopedVar); //Syntax Error
+const innerFn = outer();
+innerFn();
