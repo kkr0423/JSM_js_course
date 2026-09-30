@@ -1,14 +1,12 @@
-const outer = () => {
-  const outerVar = "Hello";
+const init = () => {
+  const hobby = "Learing JavaScript";
 
-  const inner = () => {
-    const innerVar = "Hi";
-
-    console.log(innerVar, outerVar);
+  const displayHobby = () => {
+    console.log(hobby);
   };
 
-  return inner;
+  return displayHobby;
 };
 
-const innerFn = outer();
-innerFn();
+const myFunc = init();
+myFunc();
