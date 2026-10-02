@@ -1,31 +1,9 @@
-let x = 1;
-let y = x;
+const person = { firstName: "John" };
+const otherPerson = { firstName: "John" };
 
-x = 2;
+console.log(person === otherPerson);
 
-console.log(x, y);
+const person2 = { firstName: "John" };
+const otherPerson2 = person2;
 
-let firstPerson = "John";
-let secondPerson = firstPerson;
-
-firstPerson = "Jane";
-
-console.log(firstPerson, secondPerson);
-
-const person = {
-  name: "John",
-  age: 20,
-};
-
-const anotherPerson = person;
-
-anotherPerson.name = "Jane";
-
-console.log(person, anotherPerson);
-
-const animals = ["dog", "cat", "bird"];
-const anotherAnimals = animals;
-
-anotherAnimals.push("fish");
-
-console.log(animals, anotherAnimals);
+console.log(person2 === otherPerson2);
