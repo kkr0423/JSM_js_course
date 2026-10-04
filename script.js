@@ -1,13 +1,20 @@
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-const copiedNumbers = numbers;
-const clonedNumbers = [...numbers];
+const person = {
+  name: "John",
+  age: 30,
+};
 
-numbers.push(11);
+const otherPerson = { ...person };
 
-console.log(numbers === copiedNumbers);
-console.log(numbers === clonedNumbers);
+person.age = 31;
 
-const numbers2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-const clonedNumbers2 = numbers.slice();
+console.log(person);
+console.log(otherPerson);
 
-console.log(numbers2 === clonedNumbers2);
+const person2 = {
+  name: "John",
+  age: 30,
+};
+
+const anotherPerson = Object.assign({}, person2);
+
+console.log(anotherPerson === person);
