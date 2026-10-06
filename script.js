@@ -1,20 +1,16 @@
 const person = {
   name: "John",
-  age: 30,
+  car: {
+    brand: "BMW",
+    color: "blue",
+    wheels: 4,
+  },
 };
 
-const otherPerson = { ...person };
+// const newPerson = { ...person };
+const newPerson = JSON.parse(JSON.stringify(person));
 
-person.age = 31;
+newPerson.name = "Mike";
+newPerson.car.color = "red";
 
-console.log(person);
-console.log(otherPerson);
-
-const person2 = {
-  name: "John",
-  age: 30,
-};
-
-const anotherPerson = Object.assign({}, person2);
-
-console.log(anotherPerson === person);
+console.log(person, newPerson);
