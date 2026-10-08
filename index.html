@@ -4,16 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script>
-      window.onload = function () {
-        const heading = document.createElement("h1");
-        const date = document.createTextNode(new Date().toString());
-        heading.appendChild(date);
-        document.body.appendChild(heading);
-      };
-    </script>
   </head>
   <body>
+    <div id="div1" class="class1 class2"><span>hello</span></div>
+    <input id="input" type="text" />
+    <button>Button</button>
+
+    <script>
+      let element = document.getElementById("div1");
+
+      console.log(element.classList); // ["class1", "class2"]
+      console.log(element.className); // "class1 class2"
+      console.log(element.id); // "div1"
+      console.log(element.innerHTML); // "<span>hello</span>"
+
+      element.addEventListener("click", function () {
+        alert("Div clicked!");
+      });
+    </script>
     <script src="script.js"></script>
   </body>
 </html>
