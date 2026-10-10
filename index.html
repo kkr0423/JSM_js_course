@@ -4,24 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      .menu-item {
+        background-color: black;
+        color: white;
+      }
+
+      .menu-item.active {
+        background-color: white;
+        color: black;
+      }
+    </style>
+    <script>
+      function menuClicked(currentEleement) {
+        const menuItems = document.getElementsByClassName("menu-item");
+
+        for(let i = 0; i < meniItems.length; i++) {
+          menuItem[i].classList.remove("active");
+        }
+
+        currentElement.classList.add("active");
+      }
+    </script>
   </head>
   <body>
-    <div id="div1" class="class1 class2"><span>hello</span></div>
-    <input id="input" type="text" />
-    <button>Button</button>
+    <ul>
+      <li class+"menu-item" >Menu1</li>
+      <li class+"menu-item active" >Menu2</li>
+      <li class+"menu-item" >Menu3</li>
+    </ul>
 
-    <script>
-      let element = document.getElementById("div1");
-
-      console.log(element.classList); // ["class1", "class2"]
-      console.log(element.className); // "class1 class2"
-      console.log(element.id); // "div1"
-      console.log(element.innerHTML); // "<span>hello</span>"
-
-      element.addEventListener("click", function () {
-        alert("Div clicked!");
-      });
-    </script>
     <script src="script.js"></script>
   </body>
 </html>
