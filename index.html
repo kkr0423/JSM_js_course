@@ -4,36 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      .menu-item {
-        background-color: black;
-        color: white;
-      }
-
-      .menu-item.active {
-        background-color: white;
-        color: black;
-      }
-    </style>
-    <script>
-      function menuClicked(currentEleement) {
-        const menuItems = document.getElementsByClassName("menu-item");
-
-        for(let i = 0; i < meniItems.length; i++) {
-          menuItem[i].classList.remove("active");
-        }
-
-        currentElement.classList.add("active");
-      }
-    </script>
   </head>
   <body>
-    <ul>
-      <li class+"menu-item" >Menu1</li>
-      <li class+"menu-item active" >Menu2</li>
-      <li class+"menu-item" >Menu3</li>
+    <ul class="subjects">
+      <li>Maths</li>
+      <li class="fav-subject">Science</li>
+      <li>English</li>
     </ul>
-
     <script src="script.js"></script>
   </body>
 </html>

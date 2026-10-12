@@ -1,16 +1,16 @@
-const person = {
-  name: "John",
-  car: {
-    brand: "BMW",
-    color: "blue",
-    wheels: 4,
-  },
-};
+const newElement = document.createElement("div");
+newElement.textContent = "Hello, World";
+document.body.appendChild(newElement);
 
-// const newPerson = { ...person };
-const newPerson = JSON.parse(JSON.stringify(person));
+const subjects = document.querySelector(".subjects");
 
-newPerson.name = "Mike";
-newPerson.car.color = "red";
+console.log(subjects.firstElementChild);
+console.log(subjects.lastElementChild);
 
-console.log(person, newPerson);
+const favSub = document.querySelector(".fav-subject");
+
+console.log(favSub.previousElementSibling);
+console.log(favSub.nextElementSibling);
+console.log(favSub.parentElement);
+
+favSub.remove();
