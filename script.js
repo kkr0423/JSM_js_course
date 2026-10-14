@@ -1,10 +1,13 @@
-class Person {
-  constructor(name, age, working) {
-    this.name = name;
-    this.age = age;
-    this.working = working;
-  }
+const person = new Object();
+person.lastname = "John";
+console.log(person.lastname);
+console.log(typeof person);
+
+function Person(name, age, profession) {
+  this.name = name;
+  this.age = age;
+  this.profrssion = profession;
 }
 
-const user = new Person("kkr", 39, true);
-console.log(user);
+const john = new Person("John", 23, "Teacher");
+console.log(john.name);
