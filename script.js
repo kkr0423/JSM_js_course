@@ -1,16 +1,10 @@
-const newElement = document.createElement("div");
-newElement.textContent = "Hello, World";
-document.body.appendChild(newElement);
+class Person {
+  constructor(name, age, working) {
+    this.name = name;
+    this.age = age;
+    this.working = working;
+  }
+}
 
-const subjects = document.querySelector(".subjects");
-
-console.log(subjects.firstElementChild);
-console.log(subjects.lastElementChild);
-
-const favSub = document.querySelector(".fav-subject");
-
-console.log(favSub.previousElementSibling);
-console.log(favSub.nextElementSibling);
-console.log(favSub.parentElement);
-
-favSub.remove();
+const user = new Person("kkr", 39, true);
+console.log(user);
