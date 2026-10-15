@@ -11,4 +11,3 @@ function Person(name, age, profession) {
 
 const john = new Person("John", 23, "Teacher");
 console.log(john.name);
->>>>>>> a29eeb0fd59d008c439ed3b150188900e725827b
