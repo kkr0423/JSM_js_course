@@ -1,43 +1,14 @@
-//Global Scope
-// const globalVar = "I am global!";
+const person = new Object();
+person.lastname = "John";
+console.log(person.lastname);
+console.log(typeof person);
 
-// function showGlobal() {
-//   console.log(globalVar);
-// }
-
-// showGlobal();
-
-// console.log(globalVar);
-
-// //Function Scope
-// function myFunction() {
-//   const functionScopedVar = "I am inside the function!";
-
-//   console.log(functionScopedVar);
-// }
-
-// myFunction();
-// console.log(functionScopedVar); //Syntax Error
-
-//Block Scope
-// {
-//   const blockVar = 'I am inside of the block';
-
-//   console.log(blockVar);
-// }
-
-// console.log(blockVar);
-
-
-const func1 = () => {
-  const withinScope1 = 'SCOPE 1';
-
-  console.log(withinScope1);
-
-  const func2 = () => {
-    console.log(withinScope1);
-  }
-  func2()
+function Person(name, age, profession) {
+  this.name = name;
+  this.age = age;
+  this.profrssion = profession;
 }
 
-func1();
+const john = new Person("John", 23, "Teacher");
+console.log(john.name);
+>>>>>>> a29eeb0fd59d008c439ed3b150188900e725827b
