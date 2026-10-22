@@ -1,9 +1,19 @@
-const myInterval = setInterval(() => console.log("Hello World"), 1000);
+const functionOne = () => {
+  console.log("Function One"); // 1
 
-// To stop the interval
-clearInterval(myInterval);
+  functionTwo();
 
-const myInterval2 = setInterval(() => console.log("Hello World"), 1000);
+  console.log("Function One, Part 2"); // 2
+};
 
-// To stop the interval2
-clearInterval(myInterval2);
+const functionTwo = () => {
+  setTimeout(() => console.log("Function Two"), 2000); // 3
+};
+
+functionOne();
+
+// Output:
+// Function One
+// Function One, Part 2
+// (after a two-second delay)
+// Function Two
