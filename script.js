@@ -1,19 +1,10 @@
-const functionOne = () => {
-  console.log("Function One"); // 1
-
-  functionTwo();
-
-  console.log("Function One, Part 2"); // 2
+const fetchUser = (username, callback) => {
+  setTimeout(() => {
+    console.log("Now we have the user");
+    callback({ user: username });
+  }, 2000);
 };
 
-const functionTwo = () => {
-  setTimeout(() => console.log("Function Two"), 2000); // 3
-};
-
-functionOne();
-
-// Output:
-// Function One
-// Function One, Part 2
-// (after a two-second delay)
-// Function Two
+fetchUser("test", (user) => {
+  console.log(user);
+});
