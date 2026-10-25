@@ -1,10 +1,21 @@
 const fetchUser = (username, callback) => {
   setTimeout(() => {
     console.log("Now we have the user");
-    callback({ user: username });
+    callback(username);
   }, 2000);
 };
 
-fetchUser("test", (user) => {
-  console.log(user);
+const fetchUserPhotos = (username, callback) => {
+  setTimeout(() => {
+    console.log("Now we have the photos");
+    callback(["photo1", "photo2"]);
+  }, 2000); // Simulating a delay
+};
+
+const user = fetchUser("test", (username) => {
+  console.log(username);
+
+  fetchUserPhotos(username, (userPhotos) => {
+    console.log(userPhotos);
+  });
 });
