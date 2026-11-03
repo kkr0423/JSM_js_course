@@ -1,13 +1,7 @@
-const person = new Object();
-person.lastname = "John";
-console.log(person.lastname);
-console.log(typeof person);
+const person = ["Jim", "John", "Jane"];
+const hello = (name) => console.log(`${name} says Hello!`);
+const number = 3;
+export { person, hello, number };
 
-function Person(name, age, profession) {
-  this.name = name;
-  this.age = age;
-  this.profrssion = profession;
-}
-
-const john = new Person("John", 23, "Teacher");
-console.log(john.name);
+const onlyOneThing = 'test';
+export default onlyOneThing;
